@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/back.css' %}">
+</head>
+<body>
+	<center style="padding-top: 150px;">
+		<div style="width: 500px;box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);  
+  border-radius: 15px 15px 15px 15px;">
+			<center>
+				<p style="font-size: 60px;">LOGIN</p>
+				<hr style="height: 6px;">
+			</center>
+			<table>
+				<form action="/logc/" method="GET">
+					<tr>
+						<td><label style="font-size: 30px;">Username:</label></td>
+						<td><input type="text" name="un" class="logf"></td>
+					</tr>
+					<tr>
+						<td><label style="font-size: 30px;">Password:</label></td>
+						<td><input type="password" name="pw" class="logf"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<center>
+								<input type="submit" value="Login" class="btn btn-default  btn-lg " style="background-color: #011135;color: white;height: 60px;width: 150px;border-radius: 20px 20px 20px 20px;">
+							</center>
+						</td>
+						
+					</tr>
+				</form>
+			</table><br><br>
+		</div>
+	</center>
+
+        
+</body>
+</html>
+<!--
+	<center>
+		<div style="background-color: red;">
+			<title>
+				<form>
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" name="trck"  placeholder="Enter Tracking Id"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Track"  style="background-color: #1D54AA;color: white;height: 60px;width: 150px;"></td>
+					</tr>
+				</form>
+			</title>
+			
+		</div>
+	</center>

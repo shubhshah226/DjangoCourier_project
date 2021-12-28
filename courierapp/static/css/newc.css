@@ -1,0 +1,114 @@
+.columnw3 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+.colsame {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.roww3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.divb{
+  width: 400px;height: 100px;
+  box-shadow: 5px 5px 5px 5px #13347D ;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+ /* border: 3px solid #f1f1f1;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  padding-top: 250px;
+}
+.bgb{
+	  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0);
+}
+/* Create three equal columns that floats next to each other */
+.columnbig {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+.columnsm {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 200px;
+   /* Should be removed. Only for demonstration */
+}
+
+.colbig {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+.colsm {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 800px;
+  background-color: blue; /* Should be removed. Only for demonstration */
+}
+
+/*  #66FEF6 Clear floats after the columns */
+.ro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pad{
+	padding-top: 70px;
+	padding-bottom: 10px;
+	float: left;
+	
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+header{
+	background-color: #CCF8FF ;
+}
+button{
+	 cursor: pointer; 
+        border: 1px solid #3498db; 
+        background-color: transparent;  
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+hr{
+	background-color: #09268D;
+}
+.textf{
+  width: 400px;height: 50px;font-size: 20px;border-radius: 10px;border-color:#1D54AA;
+}
+.inp{
+  padding-top: 20px;font-size: 50px;
+  font-family: Courier;
+}

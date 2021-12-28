@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>	
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/nv.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/newcss.css' %}">-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/abc2.css' %}">
+  <style type="text/css">
+    .dbg{
+  background-image: url("{% static 'images/bgi.png' %}");
+ background-size: 1800px 500px;
+  background-repeat: no-repeat;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+  </style>
+</head>
+<body>
+	<header>
+<div class="ro" >
+  <div class="columnsm">
+  	<!-- logo-->
+     <img src="{% static 'images/p2gh.png' %}" class="imsize">
+   
+  </div>
+  <div class="columnbig">
+  	<!--sing up link and nav bar-->
+    <p style="float: left;padding-left: 10px;font-size: 30px;"><b>A Local, Domestic & International Courier</b></p> 
+    
+     
+   
+    <div class="pad">
+   <a href="http://127.0.0.1:8000/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #1D54AA;color: white;">HOME</button></a>&nbsp;&nbsp;&nbsp;
+    <a href="/aboutus/"><button type="button" class="btn btn-default btn-lg" style="background-color: #1D54AA;color: white;">ABOUT US</button></a>&nbsp;&nbsp;&nbsp;
+   <a href="/trc/"> <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">TRACKING</button></a>&nbsp;&nbsp;&nbsp;
+   <a href="/is/"> <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;"> INTERNATIONAL SERVICES</button></a>&nbsp;&nbsp;&nbsp;
+    <a href="/conus/"><button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">CONTACT US</button></a>&nbsp;&nbsp;&nbsp;
+     <a href="/member/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #1D54AA;color: white;">Sign in</button></a><br>
+
+
+  </div>
+ </div>
+</div>
+</header>
+
+
+
+<!--main page-->
+<hr>
+<center>
+  <div style="padding-top: 150px;">
+    <h1><center><u>Sign In</u></center></h1>
+  <div class="juf" style="background-color: #FFFFFF;width: 500px;">
+    <center>
+    <form action="/mlogc/" method="GET">
+      <table style="width: 450px;">
+     <tr><td> <label>Email</label></td></tr>
+      <tr><td><input type="text"  name="cem" ></td></tr>
+      <tr><td><label>Password</label></td></tr>
+      <tr><td><input type="password"  name="cpass" ></td></tr>
+      <tr><td colspan="2"><center><button type="submit" class="btn btn-default  btn-lg " style="background-color: #011135;color: white;">Sign in</button></center></td></tr>
+      </table>
+    </form>
+    <br><br>
+    <p>What Not A Member? <a href="/reg/"> Please Sign Up Here </a></p>
+    <br>
+    </center>
+  </div></div>
+  </center>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #0F346E ;color: white;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+       <img src="{% static 'images/p2gf.png' %}" class="imsize">
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" style="padding-top: 50px;">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+          <li>
+            <a href="http://127.0.0.1:8000/" style="color: white;">Home</a>
+          </li>
+          <li>
+            <a href="/aboutus/" style="color: white;">About Us</a>
+          </li>
+          <li>
+            <a href="/trc/" style="color: white;">Tracking</a>
+          </li>
+          <li> 
+            <a href="/conus/" style="color: white;">Contcat Us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" style="padding-top: 50px;">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Follow Us</h5>
+
+<a href="#!"><img src="{% static 'images/ig.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/fb2.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/tw.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/ln.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
+

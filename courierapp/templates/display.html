@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/back2.css' %}">
+</head>
+<body>
+	<header>
+		<div style="float: left;padding-left: 60px;">
+			<a href="/out/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #011135;color: white;">Log Out</button></a><br>
+		</div>
+		<div style="float: right;padding-right: 60px;">
+		<form action="/workfind/" method="GET">
+			<table>
+				<tr>
+					<td><input type="text" name="worksearch" class="logf" placeholder="Filter out date/city" style="width: 400px;"></td>
+					<td><input type="submit" name="submit" value="Filter" class="btn btn-default  btn-lg" style="background-color: #011135;color: white;border-radius: 20px 20px 20px 20px;"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</header>
+<center style="padding-top: 150px;">
+	<div style="width: 1000px;box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);  
+  border-radius: 15px 15px 15px 15px;color: white;">
+  			<table  class="tbstyle">
+<tr class="bdtr">
+	<th class="bd" style="background-color: #011135 ;">CNOTENO</th>
+	<th class="bd" style="background-color: #011135 ;">CITY</th>
+	<th class="bd" style="background-color: #011135 ;">DATE</th>
+	<th class="bd" style="background-color: #011135 ;">TIME</th>
+	<th class="bd" style="background-color: #011135 ;">Delete</th>
+</tr>
+{% for d in info %}
+<tr>
+	<td class="bd" style="width: 330px;color: #011135;">
+			
+		{{d.noteno}}
+	</td>
+		<td class="bd" style="width: 330px;color: #011135;">
+		Forwarded to  {{d.destination}}
+	</td>
+	<td class="bd" style="width: 330px;color: #011135;">
+		{{d.date}}
+	</td>
+	<td class="bd" style="width: 330px;color: #011135;">
+		{{d.time}}
+	</td>
+	<td style="width: 330px;color: #011135;">
+		<a href='/deleteview/?id={{d.id}}'>Delete</a>
+	</td>
+
+	</tr>
+	{% endfor %}
+</table>
+	</div>
+<br><br><a href="/all/">Display All</a>&nbsp;&nbsp;/&nbsp;
+<a href="/work/"> GO TO Work Space</a>
+</center>
+</body>
+</html>

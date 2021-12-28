@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>	
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/newcss.css' %}">-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+    <style type="text/css">
+    .dbg{
+  background-image: url("{% static 'images/bgi.png' %}");
+ background-size: 1800px 500px;
+  background-repeat: no-repeat;
+}
+  </style>
+</head>
+<body>
+	<header>
+<div class="ro" >
+  <div class="columnsm">
+  	<!-- logo-->
+    <h2>Column for logo</h2>
+   
+  </div>
+  <div class="columnbig">
+  	<!--sing up link and nav bar-->
+    <p style="float: left;padding-left: 10px;font-size: 30px;"><b>A Local, Domestic & International Courier</b></p>      
+    <div class="pad">
+   <a href="http://127.0.0.1:8000/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #1D54AA;color: white;">HOME</button></a>&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-lg" style="background-color: #1D54AA;color: white;">ABOUT US</button>&nbsp;&nbsp;&nbsp;
+   <a href="/trc/"> <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">TRACKING</button></a>&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;"> INTERNATIONAL SERVICES</button>&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">CONTACT US</button>
+
+  </div>
+ </div>
+</div>
+</header>
+
+
+
+<!--main page-->
+<hr>
+
+  
+<div class="roww3 dbg">
+  <div class="columnw3" style=" padding-top: 470px;padding-left: 100px;">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"  src="{% static 'images/serviceimg_1.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Our Courier Service was founded in the year 2018, with the sole aim of providing reliable and efficient door-to-door delivery service to businesses. Currently, Venus is one of the leading courier and cargo service providers in India. Venus's network spans across more than 1100 locations covering more than 12000 pin codes in India. A huge team of dedicated professionals deliver.</p>
+        <!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+          </div>
+      </div>
+      
+  </div>
+  <div class="columnw3" style="padding-top: 470px;padding-left: 100px;">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top"  src="{% static 'images/serviceimg_3.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">SURFACE CARGO</h5>
+            <p class="card-text">Our Courier Service provides safe and reliable delivery of goods via road or rail, and in some cases we use both these modes of ransportation to deliver courier/cargo. this service is known as surface cargo. venus courier ensures on-time and consistent delivery of service cargo from time to time.At Venus Courier ,the drivers and workforce are well trained and ensure efficient service.</p>
+           <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+          </div>
+      </div>
+  </div>
+  <div class="columnw3" style="padding-top: 470px;padding-left: 100px;">
+   <div class="card" style="width: 18rem;">
+        <img class="card-img-top"  src="{% static 'images/serviceimg_2.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AIR CARGO</h5>
+            <p class="card-text">some situations require quicker transportation. venus courier ensures they are delivered faster via air cargo, in an affordable and efficient way.We send materials via air to the required destination.in situations where there is no airport facility available, the goods are air lifted to the nearest airport through Air Cargo and then transported to the desired destination using Surface Cargo.</p>
+          <!--  <a href="#" class="btn btn-primary">Go somewhere</a>-->
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<br><br><br>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #0F346E ;color: white;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">About Us</a>
+          </li>
+          <li>
+            <a href="#!">Tracking</a>
+          </li>
+          <li> 
+            <a href="#!">Contcat Us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
+

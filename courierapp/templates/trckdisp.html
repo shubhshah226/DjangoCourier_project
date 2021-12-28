@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Courier Tracking</title>	
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/nc.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/newcss.css' %}">-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/abc3.css' %}">
+  <style type="text/css">
+    .dbg{
+  background-image: url("{% static 'images/abback.jpg' %}");
+ background-size: 1800px 500px;
+ 
+  filter: blur(5px);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  </style>
+</head>
+<body>
+	<header>
+<div class="ro" >
+  <div class="columnsm">
+  	<!-- logo-->
+     <img src="{% static 'images/p2gh.png' %}" class="imsize">
+   
+  </div>
+  <div class="columnbig">
+  	<!--sing up link and nav bar-->
+    <p style="float: left;padding-left: 10px;font-size: 30px;"><b>A Local, Domestic & International Courier</b></p>      
+    <div class="pad">
+    <a href="http://127.0.0.1:8000/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #1D54AA;color: white;">HOME</button></a>&nbsp;&nbsp;&nbsp;
+    <a href="/aboutus/"><button type="button" class="btn btn-default btn-lg" style="background-color: #1D54AA;color: white;">ABOUT US</button></a>&nbsp;&nbsp;&nbsp;
+    <a href="/trc/"><button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">TRACKING</button>&nbsp;&nbsp;&nbsp;</a>
+   <a href="/is/"> <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;"> INTERNATIONAL SERVICES</button></a>&nbsp;&nbsp;&nbsp;
+   <a href="/conus/"> <button type="button" class="btn btn-default btn-lg"style="background-color: #1D54AA;color: white;">CONTACT US</button></a>&nbsp;&nbsp;&nbsp;
+     <a href="/member/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #1D54AA;color: white;">Sign in</button></a><br>
+
+
+  </div>
+ </div>
+</div>
+</header>
+
+
+
+<!--main page-->
+<hr>
+
+  <div style="height: 600px;" class="dbg"></div>
+  <div class="roww3 bg-text">
+    <form>
+      <center>
+        <table class="tbstyle">
+          <tr class="bdtr">
+  <th class="bd" style="background-color: #011135 ;">TRACKIN NUMBER</th>
+  <th class="bd" style="background-color: #011135 ;">ORIGIN</th>
+  <th class="bd"style="background-color: #011135 ;">DATE</th>
+  <th class="bd"style="background-color: #011135 ;">TIME</th>
+  <th style="background-color: #011135 ;">DESTINATION</th>
+</tr>
+<tr>
+  <td class="bd" style="width: 330px;color: #011135;">
+
+    {{disp.noteno}}
+    
+  </td>
+  <td class="bd" style="width: 170px;color: #011135;">
+    {{disp.origin}}
+  </td>
+    
+  <td class="bd" style="width: 170px;color: #011135;">
+    {{disp.date}}
+  </td>
+  <td class="bd" style="width: 170px;color: #011135;">
+    {{disp.time}}
+  </td>
+  <td style="width: 270px;color: #011135;">
+     {{disp.destination}}
+  </td>
+  </tr>
+        </table>
+
+      </center>
+    </form>
+  </div>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #0F346E ;color: white;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <img src="{% static 'images/p2gf.png' %}" class="imsize">
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" style="padding-top: 50px;">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+          <li>
+            <a href="http://127.0.0.1:8000/" style="color: white;">Home</a>
+          </li>
+          <li>
+            <a href="/aboutus/" style="color: white;">About Us</a>
+          </li>
+          <li>
+            <a href="/trc/" style="color: white;">Tracking</a>
+          </li>
+          <li> 
+            <a href="/conus/" style="color: white;">Contcat Us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" style="padding-top: 50px;">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Follow Us</h5>
+
+<a href="#!"><img src="{% static 'images/ig.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/fb2.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/tw.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+<a href="#!"><img src="{% static 'images/ln.jpg' %}" style="width: 30px;height: 30px;"></a>&nbsp;&nbsp;
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
+

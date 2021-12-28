@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/back.css' %}">
+</head>
+<body>
+	<header>
+		<div style="float: left;padding-left: 60px;">
+			<a href="/out/"> <button type="button" class="btn btn-default  btn-lg " style="background-color: #011135;color: white;">Log Out</button></a><br>
+		</div>
+		<div style="float: right;padding-right: 60px;">
+		<form action="/workfind/" method="GET">
+			<table>
+				<tr>
+					<td><input type="text" name="worksearch" class="logf" placeholder="Find shipment by date/city" style="width: 400px;"></td>
+					<td><input type="submit" name="submit" value="Find" class="btn btn-default  btn-lg" style="background-color: #011135;color: white;border-radius: 20px 20px 20px 20px;"></td>
+				</tr>
+			</table>
+		</form>
+		<a href="/all/">Display All</a>
+	</div>
+	</header>
+<center style="padding-top: 150px;">
+	<div style="width: 800px;box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);  
+  border-radius: 15px 15px 15px 15px;">
+  <center>
+				<p style="font-size: 60px;">Work Space</p>
+				<hr style="height: 6px;">
+			</center>	
+	<form action='/newship/'>
+		<table>
+			<tr>
+				<td><label style="font-size: 30px;">Origin:</label></td>
+				<td><input type="text" name="origin" value="Ahmedabad" class="logf" readonly="Ahmedabad"> </td>
+				<td>&nbsp;&nbsp;<label style="font-size: 30px;">Date:</label></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" onload="getdate()"value="datetime-local" name="date" class="logf"></td>
+			</tr>			
+			<tr></tr>
+			<tr>
+				<td><label style="font-size: 30px;">Company:</label>&nbsp;&nbsp;</td>
+				<td>
+					<select name="company" class="logf">
+						<option value="SS COURIER">SS COURIER</option>
+						<option value="M.Flyking.In COURIER">M.Flyking.In COURIER</option>			
+						<option value="Laxminath COURIER">Laxminath COURIER</option>
+						<option value="Venus COURIER">Venus COURIER</option>
+						<option value="Pushpak COURIER">Pushpak COURIER</option>
+						<option value="SuperSpeed COURIER">SuperSpeed COURIER</option>	
+						<option value="WestIndia COURIER">WestIndia COURIER</option>	
+						<option value="Yogesh COURIER">Yogesh COURIER</option>	<option value="Relience COURIER">Relience COURIER</option>	
+						<option value="Time Express COURIER">Time Express COURIER</option>
+						<option value="Shahara COURIER">Shahara COURIER</option>
+						<option value="Perfect Express COURIER">Perfect Express COURIER</option>
+						<option value="OnDot COURIER">OnDot COURIER</option>
+						<option value="MarutiAir COURIER">MarutiAir COURIER</option>
+					</select>
+				</td>
+				<td>&nbsp;&nbsp;<label style="font-size: 30px;">Time:</label></td>	
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" onload="gettime()"value="datetime-local" name="time" class="logf"></td>			
+			</tr>
+			<tr>
+				<td><label style="font-size: 30px;">Destination:</label></td>
+				<td>
+				<select name="destination" class="logf">
+					<option value="delhi">Delhi</option>
+					<option value="mumbai">Mumbai</option>
+					<option value="kolkatta">Kolkatta</option>
+					<option value="Ahmedabad">Ahmedabad</option>
+					<option value="Bharuch">Bharuch</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Kashmir">Kashmir</option>
+					<option value="Jamnagar">Jamnagar</option>
+					<option value="Surat">Surat</option>
+					<option value="Amreli">Amreli</option>
+					<option value="Vadodara">Vadodara</option>
+					<option value="Uttrakhand">Uttrakhand</option>
+					<option value="Rajkot">Rajkot</option>
+					<option value="katch">Katch</option>
+					<option value="kolkatta Outer">Kolkatta Outer</option>
+					<option value="Dahod">Dahod</option>	
+					<option value="Ghazipur">Ghazipur</option>
+					<option value="Mumbai Proper">Mumbai Proper</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Banglore">Banglore</option>	
+					<option value="Bhuj">Bhuj</option>						
+					<option value="Ankelshwar">AnkleshWar</option>
+					<option value="Bhilwara">Bhilwara</option>		
+					<option value="Bhavnagar">Bhavnagar</option>
+					<option value="Cochin">Cochin</option>			
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label style="font-size: 30px;">CNoteNO</label></td>
+				<td><input type="number" name="noteno" class="logf"></td>
+			</tr>
+			<tr>
+				
+				<td colspan="4">
+					<center>
+						<input type="submit" name="submit" value="submit" class="btn btn-default  btn-lg " style="background-color: #011135;color: white;height: 60px;width: 150px;border-radius: 20px 20px 20px 20px;">
+					</center>
+				</td>
+			</tr>
+
+		</table>
+	</form>
+	</div>
+</center>
+</body>
+</html>
